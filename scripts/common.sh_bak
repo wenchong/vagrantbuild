@@ -1,0 +1,6 @@
+#java
+JAVA_ARCHIVE=jdk-8u65-linux-x64.tar.gz
+JAVA_HOME_DIR_PATH=/get/soft/jdk1.8.0_65
+
+
+

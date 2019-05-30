@@ -1,0 +1,15 @@
+2019-05-30 09:54:25,425 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /get/soft/zookeeper-3.4.7/conf/zoo.cfg
+2019-05-30 09:54:25,444 [myid:] - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: 11.11.11.13 to address: /11.11.11.13
+2019-05-30 09:54:25,445 [myid:] - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: 11.11.11.12 to address: /11.11.11.12
+2019-05-30 09:54:25,446 [myid:] - INFO  [main:QuorumPeer$QuorumServer@149] - Resolved hostname: 11.11.11.11 to address: /11.11.11.11
+2019-05-30 09:54:25,446 [myid:] - INFO  [main:QuorumPeerConfig@331] - Defaulting to majority quorums
+2019-05-30 09:54:25,447 [myid:] - ERROR [main:QuorumPeerMain@85] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /get/soft/zookeeper-3.4.7/conf/zoo.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:123)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+Caused by: java.lang.IllegalArgumentException: serverid  is not a number
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:355)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:119)
+	... 2 more
+Invalid config, exiting abnormally
